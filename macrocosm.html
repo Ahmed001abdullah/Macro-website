@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Macrocosm Trade LLP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="Videos/bgvideo.mp4" type="video/mp4" />
+  </video>
+
+  <div class="overlay">
+    <header>
+      <img src="images/logo.png" alt="Macrocosm Logo" class="logo" />
+      <h1>Macrocosm Trade LLP</h1>
+      <p class="subtitle">Fill out the form and we’ll get back to you shortly</p>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> info@macrocosm.com</p>
+        <p><strong>Phone:</strong> +92 300 1234567</p>
+      </div>
+
+      <div class="form-container">
+        <form action="mail.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input id="phone" type="tel" name="phone" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div id="whatsapp-widget">
+    <a href="https://wa.me/923001234567" target="_blank">
+      <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
